@@ -45,6 +45,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     <h1>商品展示</h1>
+<!-- 	<h1>Product showcase</h1> -->
+	  
     <hr>
   
     <center>
@@ -53,6 +55,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <td>
           
           <!-- 商品循环开始 -->
+<!-- 		Commodity cycle begins -->
            <% 
                ItemsDAO itemsDao = new ItemsDAO(); 
                ArrayList<Items> list = itemsDao.getAllItems();
@@ -72,6 +75,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
              </dl>
           </div>
           <!-- 商品循环结束 -->
+		
+<!-- Commodity cycle end -->
         
           <%
                    }
